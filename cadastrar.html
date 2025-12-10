@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="login-box">
+        <form>
+
+            <h1>Criar Conta</h1>
+
+            <!-- Usuário -->
+            <div class="input-group">
+                <input type="text" placeholder="Usuário">
+                <i class="fa fa-user"></i>
+            </div>
+
+            <!-- Email -->
+            <div class="input-group">
+                <input type="email" placeholder="Email">
+                <i class="fa fa-envelope"></i>
+            </div>
+
+            <!-- Senha -->
+            <div class="input-group">
+                <input type="password" placeholder="Senha">
+                <i class="fa fa-lock"></i>
+            </div>
+
+            <!-- Link voltar para login -->
+            <a href="#" class="forgot" onclick="irParaLogin()">Já tenho conta - Entrar</a>
+
+            <!-- Botão cadastrar -->
+            <button type="button" class="btn" onclick="cadastrar()">Cadastrar</button>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+
+    <style>
+        body {
+            background: url("https://picsum.photos/1600/900?random=1");
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+
+           
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-box {
+            width: 380px;
+            padding: 40px;
+            border-radius: 12px;
+
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(6px);
+            color: #fff;
+
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+
+        /* Inputs */
+        .input-group {
+            position: relative;
+            margin: 18px 0;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 15px;
+            padding-right: 45px;
+
+            border-radius: 8px;
+            border: none;
+            outline: none;
+
+            font-size: 15px;
+        }
+
+        .input-group i {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #555;
+            font-size: 18px;
+        }
+
+        /* Link */
+        .forgot {
+            display: block;
+            text-align: right;
+            margin-top: 6px;
+            color: #ccc;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .forgot:hover {
+            text-decoration: underline;
+        }
+
+        /* Botão */
+        .btn {
+            width: 100%;
+            padding: 15px;
+            margin-top: 25px;
+            font-size: 17px;
+
+            background: #8b00c9;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #a43be0;
+        }
+    </style>
+
+</body>
+
+</html>

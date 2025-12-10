@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacientes</title>
+    <link rel="stylesheet" href="pacientes.css">
+</head>
+
+<body>
+
+    <!-- MENU SUPERIOR -->
+    <header>
+        <h1>Área do Médico — Pacientes</h1>
+        <a href="index.html" class="logout"><b>Voltar</b></a>
+    </header>
+
+    <!-- LAYOUT PRINCIPAL -->
+    <div class="container">
+
+        <div class="left">
+
+            <h2>Meus Pacientes</h2>
+
+            <!-- FORMULÁRIO PARA NOVO / EDITAR -->
+            <form id="formPaciente">
+
+                <input id="nome" type="text" placeholder="Nome completo" required>
+                <input id="cpf" type="text" placeholder="CPF" required>
+
+
+
+                <button type="submit">Salvar Paciente</button>
+            </form>
+
+            <h2>Lista de Pacientes</h2>
+            <input type="text" id="pesquisa" placeholder="Pesquisar por nome...">
+
+            <ul id="listaPacientes"></ul>
+        </div>
+
+        <!-- ABA LATERAL DE INFORMAÇÕES -->
+        <div class="right" id="infoPaciente">
+
+            <h2>Informações do Paciente</h2>
+            <p>Selecione um paciente da lista.</p>
+
+            <div id="dados"></div>
+
+            <h3>Prontuário</h3>
+            <textarea id="historico" placeholder="Histórico do paciente..."></textarea>
+
+            <h3>Exames Anexados</h3>
+            <input type="file" id="arquivo" onchange="mostrarBotao()">
+
+            <button id="btnContinuar" onclick="irParaProximaPagina()" style="display:none;">
+                Enviar / Próxima Página
+            </button>
+
+
+        </div>
+    </div>
+
+    <script src="pacientes.js"></script>
+
+</body>
+
+</html>
