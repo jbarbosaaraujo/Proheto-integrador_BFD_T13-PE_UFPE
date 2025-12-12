@@ -8,7 +8,6 @@
 
 body {
     background: #fff1e4;
-    ;
     color: #222;
     padding-top: 60px;
     /* Ajuste conforme a altura do seu header */
@@ -17,9 +16,6 @@ body {
     overflow: visible;
     /* Padrão, mas bom para confirmar */
 }
-
-
-
 
 
 /* -------- HEADER -------- */
@@ -31,7 +27,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     position: fixed;
     /* Fica fixo na janela do navegador */
     top: 0;
