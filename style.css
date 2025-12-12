@@ -93,7 +93,7 @@ a:hover {
 }
 
 .about p {
-    font-size: 20px;
+    font-size: 15px;
     max-width: 700px;
     margin: auto;
 }
@@ -145,7 +145,7 @@ a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: .3s;
     
-    height: 200px; /* antes era 250px */
+    height: 230px; /* antes era 250px */
 }
 
 
@@ -162,10 +162,10 @@ a:hover {
 .dev-container {
     /* --- ALTERADO: cards menores se encaixando melhor --- */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* antes 180px */
-    gap: 20px; /* antes 25px */
-    max-width: 750px; /* antes 800px */
-    margin: auto;
+    grid-template-columns: repeat(5, 1fr); /* 5 por linha */
+    gap: 24px; 
+    width: 100%;
+    margin-top: 20px;
 }
 
 
