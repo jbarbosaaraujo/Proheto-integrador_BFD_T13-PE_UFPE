@@ -19,11 +19,6 @@ document.getElementById("entrarBtn").addEventListener("click", function(event) {
 });
 
 
-
-
-
-
-
 // Quando clicar no botão cadastrar
 function cadastrar() {
     // Coloque aqui a página de destino após cadastrar
@@ -35,5 +30,19 @@ function irParaLogin() {
     // Coloque a página de login
     window.location.href = "login.html";
 }
+
+
+//magens de fundo página Login
+ const imagens = [
+    "./img/medico1.jpeg",
+    "./img/medico2.jpeg",
+    "./img/medico3.jpeg",
+    "./img/medico4.jpeg",
+    "./img/medico5.jpeg",
+  ];
+
+  const indiceAleatorio = Math.floor(Math.random() * imagens.length);
+
+  document.body.style.backgroundImage = `url('${imagens[indiceAleatorio]}')`;
 
 
