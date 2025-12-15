@@ -128,24 +128,13 @@ a:hover {
 
 .dev-card {
     background: #f0cee2;
-    
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: .3s;
-    
-
-
-    /* --- ALTERADO: diminuído tamanho do card --- */
-
-    background: #e4cbd9;
-    padding: 10px; /* antes 15px */
-    border-radius: 12px;
-    text-align: center;
+    padding: 10px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: .3s;
-    
-    height: 230px; /* antes era 250px */
+    height: 230px; 
 }
 
 
