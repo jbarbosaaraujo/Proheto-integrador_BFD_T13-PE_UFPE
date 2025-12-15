@@ -43,6 +43,10 @@ function irParaLogin() {
 
   const indiceAleatorio = Math.floor(Math.random() * imagens.length);
 
-  document.body.style.backgroundImage = `url('${imagens[indiceAleatorio]}')`;
+ document.body.style.setProperty(
+  "--bg-image",
+  `url('${imagens[indiceAleatorio]}')`
+);
+
 
 
