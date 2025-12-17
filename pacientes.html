@@ -13,7 +13,6 @@
     <!-- MENU SUPERIOR -->
     <header>
         <h1>Área do Médico — Pacientes</h1>
-        <a href="index.html" class="logout"><b>Voltar</b></a>
     </header>
 
     <!-- LAYOUT PRINCIPAL -->
@@ -48,8 +47,22 @@
 
             <div id="dados"></div>
 
+            <button onclick="limparBusca()" class="btn-limpar-busca">
+                Limpar Busca
+            </button>
+
+
             <h3>Prontuário</h3>
-            <textarea id="historico" placeholder="Histórico do paciente..."></textarea>
+
+            <textarea id="historico" placeholder="Histórico do paciente..." disabled></textarea>
+
+            <button id="btnEditarHistorico" onclick="editarHistorico()" style="display:none;">
+                Editar Histórico
+            </button>
+
+            <button id="btnSalvarHistorico" onclick="salvarHistorico()" style="display:none;">
+                Salvar Histórico
+            </button>
 
             <h3>Exames Anexados</h3>
             <input type="file" id="arquivo" onchange="mostrarBotao()">
