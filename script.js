@@ -32,7 +32,7 @@ function irParaLogin() {
 }
 
 
-//magens de fundo página Login
+//Imagens de fundo página Login
  const imagens = [
     "./img/medico1.jpeg",
     "./img/medico2.jpeg",
