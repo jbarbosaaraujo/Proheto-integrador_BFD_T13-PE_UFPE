@@ -27,19 +27,24 @@
 
                 <input id="nome" type="text" placeholder="Nome completo" required>
                 <input id="cpf" type="text" placeholder="CPF" required>
-
+                <input id="nascimento" type="text" placeholder="Data Nascimento" required>
+                <input id="endereco" type="text" placeholder="Endereço Completo" required>
+                <input id="telefone" type="tel" placeholder="Telefone" required>
+                <input id="emergenciaNome" type="text" placeholder="Contato de Emergência - Nome" required>
+                <input id="emergenciaTelefone" type="tel" placeholder="Contato de Emergência - Telefone" inputmode="numeric" required>
 
 
                 <button type="submit">Salvar Paciente</button>
             </form>
 
             <h2>Lista de Pacientes</h2>
-            <input type="text" id="pesquisa" placeholder="Pesquisar por nome...">
+            <input type="search"id="pesquisa" placeholder="Pesquisar por CPF..." inputmode="numeric">
 
             <ul id="listaPacientes"></ul>
+            
         </div>
 
-        <!-- ABA LATERAL DE INFORMAÇÕES -->
+        <!-- ABA LATERAL DE INFORMAÇÕEs -->
         <div class="right" id="infoPaciente">
 
             <h2>Informações do Paciente</h2>

@@ -11,13 +11,22 @@ document.getElementById("formPaciente").addEventListener("submit", function (e) 
 
     const nome = document.getElementById("nome").value.trim();
     const cpf = document.getElementById("cpf").value.trim();
+    const endereco = document.getElementById("endereco").value.trim();
+    const telefone = document.getElementById("telefone").value.trim();
+    const emergenciaNome = document.getElementById("emergenciaNome").value.trim();
+    const emergenciaTelefone = document.getElementById("emergenciaTelefone").value.trim();
+
+
+
+
+
 
     if (!nome || !cpf) {
         alert("Preencha todos os campos.");
         return;
     }
 
-    pacientes.push({ nome, cpf });
+    pacientes.push({ nome, cpf, nascimento, endereco, telefone, emergenciaNome, emergenciaTelefone });
     localStorage.setItem("pacientes", JSON.stringify(pacientes));
 
     this.reset();
