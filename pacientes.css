@@ -45,8 +45,9 @@ header h1 {
 .left,
 .right {
     background: white;
-    padding: 20px;
+    padding: 20px 20px 70px 20px;
     border-radius: 10px;
+
 }
 
 .left {
@@ -58,16 +59,43 @@ header h1 {
     width: 60%;
 }
 
-/* ------ BOTÕES DO ASIDE ------ */
-.btn-aside {
-    height: 50px;
-    width: 250px;
-    margin-bottom: 30px;
+/* ------ FORM ------ */
+form input {
+
+
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    /*  Inputs arredondados */
+    box-sizing: border-box;
+    font-size: 15px;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+
+form button {
+    /* BOTÃO ROXO  */
+    width: 100%;
+    padding: 12px;
+    background: rgb(148, 142, 143);
+    color: white;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+
+}
+
+form button:hover {
+    background: #550f1571;
+    /* Roxo mais claro */
+}
+
+#formPaciente h3 {
+    margin: 20px 0px;
 }
 
 /* ------ RIGHT PANEL ------ */
@@ -75,4 +103,30 @@ ul {
     width: 100%;
     height: 80px;
     margin-bottom: 10px;
+}
+
+/* ------ FOOTER ------ */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    background: gray;
+    color: #fff;
+
+    position: fixed;
+    /* Fica fixo na janela do navegador */
+    bottom: 0;
+    /* Alinha à parte inferior */
+    left: 0;
+    /* Alinha à esquerda */
+    width: 100%;
+    /* Ocupa a largura total */
+    z-index: 100;
+    /* Garante que fique acima de outros elementos */
+}
+
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
 }
