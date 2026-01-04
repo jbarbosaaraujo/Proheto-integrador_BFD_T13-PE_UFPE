@@ -7,8 +7,8 @@
 
 
 body {
-    background: #fff1e4;
-    color: #222;
+    background: #f4f6f8;
+    color: #2c2c2c;
     padding-top: 60px;
     /* Ajuste conforme a altura do seu header */
     padding-bottom: 40px;
@@ -21,7 +21,7 @@ body {
 /* -------- HEADER -------- */
 header {
     width: 100%;
-    background: gray;
+    background:#f4f6f8;
     color: #fff;
     padding: 18px 40px;
     display: flex;
