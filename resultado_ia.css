@@ -11,8 +11,8 @@ body {
 
 /* HEADER */
 header {
-    background: gray;
-    color: white;
+    background: #f4f6f8;
+    color: #2c2c2c;
     padding: 8px 20px;
     display: flex;
     justify-content: space-between;
@@ -22,7 +22,7 @@ header {
 }
 
 header a.logout {
-    color: #fff;
+    color: #2c2c2c;
     text-decoration: none;
     background: #5A5A5A;     /* Cinza */
     padding: 6px 14px;
