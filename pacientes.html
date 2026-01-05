@@ -19,29 +19,70 @@
     <div class="container">
 
         <div class="left">
+            <h2>Cadastrar Paciente</h2>
 
-            <h2>Meus Pacientes</h2>
-
-            <!-- FORMULÁRIO PARA NOVO / EDITAR -->
+            <!-- FORMULÁRIO PARA NOVO PACIENTE-->
             <form id="formPaciente">
 
-                <input id="nome" type="text" placeholder="Nome completo" required>
+                <input id="nome" type="text" placeholder="Nome" required>
+                <input id="sobrenome" type="text" placeholder="Sobrenome" required>
                 <input id="cpf" type="text" placeholder="CPF" required>
-                <input id="nascimento" type="text" placeholder="Data Nascimento" required>
-                <input id="endereco" type="text" placeholder="Endereço Completo" required>
-                <input id="telefone" type="tel" placeholder="Telefone" required>
+                <label for="nascimento">Data de Nascimento</label>
+                <input id="nascimento" type="date" placeholder="Data Nascimento" required>
+                <label for="sexo">Sexo</label>
+                <select id="sexo" name="sexo" required>
+                    <option value="" disabled selected>Selecione o sexo</option>
+                    <option value="M">Masculino</option>
+                    <option value="F">Feminino</option>
+                </select>
+                <h3>Endereço</h3>
+                <input id="logradouro" type="text" placeholder="Logradouro: ex 'Rua Doutor Araújo'" required>
+                <input id="numero" type="text" placeholder="Número" required>
+                <input id="complemento" type="text" placeholder="Complemento: 'ex bloco 1 / apto 101'" required>
+                <input id="bairro" type="text" placeholder="Bairro" required>
+                <input id="cidade" type="text" placeholder="Cidade" required>
+                <label for="estado">Estado</label>
+                <select id="estado" name="Estado" required>
+                    <option value="" disabled selected>Selecione o Estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+                <h3>Contato</h3>
+                <input id="telefone" type="tel" placeholder="Telefone (99) 9 9999-9999" required>
+                <input id="email" type="email" placeholder="E-mail" required>
                 <input id="emergenciaNome" type="text" placeholder="Contato de Emergência - Nome" required>
-                <input id="emergenciaTelefone" type="tel" placeholder="Contato de Emergência - Telefone" inputmode="numeric" required>
+                <input id="emergenciaTelefone" type="tel" placeholder="Contato de Emergência - Telefone"
+                    inputmode="numeric" required>
 
 
                 <button type="submit">Salvar Paciente</button>
             </form>
 
-            <h2>Lista de Pacientes</h2>
-            <input type="search"id="pesquisa" placeholder="Pesquisar por CPF..." inputmode="numeric">
-
-            <ul id="listaPacientes"></ul>
-            
         </div>
 
         <!-- ABA LATERAL DE INFORMAÇÕEs -->
@@ -79,6 +120,12 @@
 
         </div>
     </div>
+
+    <footer>
+        © 2025 Company Name —
+        <a href="#">Privacy Policy</a> •
+        <a href="#">Terms of Service</a>
+    </footer>
 
     <script src="pacientes.js"></script>
 
